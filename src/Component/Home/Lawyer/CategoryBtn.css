@@ -1,0 +1,44 @@
+.grid-card {
+  cursor: pointer;
+  margin: 10px 50px;
+  width: 140px;
+  height: 150px;
+}
+  
+.grid-card img {
+  width: 70px;
+  padding-top: 5px;
+}
+
+.grid-card div {
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.grid-card div:hover {
+  background-color: #f4d596;
+}
+
+.grid-card p {
+  margin: 20px;
+  color: black;
+}
+
+.grid-card p:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1116px) {
+    .supreme-grid-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .grid-card {
+        margin: 0px;
+      }
+}

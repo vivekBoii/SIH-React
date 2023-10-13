@@ -1,0 +1,114 @@
+:root {
+    --primary-color: ;
+    --secondary-color: #AA9482;
+}
+
+a{
+    text-decoration: none;
+}
+
+.landing-container{
+    padding: 60px;
+    height: 100vh;
+    background: linear-gradient(90deg, #E6E6E6 0%, #A18974 100%);
+}
+
+.landing-content p{
+    color: #6f614a;
+    margin: 30px 0 0 0;
+}
+
+.landing-container::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: #AA9482;
+}
+
+.landing-container-header a{
+    font-size: 2em;
+    color: black;
+    font-weight: bolder;
+    display: block;
+    position: relative;
+    height: 105px;
+}
+
+/* content section  */
+
+.landing-content h1{
+    font-size: 2.6rem;
+    max-width: 450px;
+    margin: 0;
+    text-align: left;
+}
+
+/* list  */
+
+.landing-content-option ul{
+    list-style: none;
+    margin: 40px 0px;
+    padding: 0;
+}
+
+.landing-content-option ul li{
+    display: block;
+    max-width: 466px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid #FBFBFB;
+    padding: 24px 0px 24px 0px;
+    transition: .25s;
+    position: relative;
+}
+.landing-content-option ul li:hover{
+    border: 1px solid black;
+}
+
+.landing-content-option ul li a{
+    font-size: 16px;
+    color: black;
+    position: relative;
+    padding: 36px 36px 0px 36px;
+}
+
+.landing-content-option ul li i{
+    color: black;
+    left: 2px;
+    font-size: 25px;
+    padding-right: 40px ;
+}
+
+.btn-landing {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: #AA9482;
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 2rem;
+    border: none;
+    margin-top: 4rem;
+}
+
+.btn-landing:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #AA9482;
+}
+
+@media only screen and (max-width: 970px) {
+    .landing-container::before{
+        display: none;
+    }
+    .landing-content-option ul li{
+        padding: 20px 0px 20px 0px;
+    }
+    .landing-content-option ul li a{
+        padding: 36px 36px 0px 0px;
+    }
+  }

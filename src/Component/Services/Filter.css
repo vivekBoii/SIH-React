@@ -1,0 +1,83 @@
+.filter-search-lawyer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 40px;
+}
+
+.filter-search-container {
+  padding: 30px 40px;
+  color: #fff;
+  background-color: #6f614a;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.filter-search-container h2 {
+  font-size: 35px;
+  
+}
+
+.filter-search-container label {
+  display: block;
+  margin: 0.7rem 0;
+  font-size: 18px;
+  
+}
+
+.filter-search-container select {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 16px;
+}
+
+.filter-button{
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+  background-color:#f4d596;
+  color: black;
+  text-align: center;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 2rem;
+  font-size: 17px;
+  width: 48%;
+}
+.filter-button:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #f4d596;;
+}
+.filterMenu{
+  display: flex;
+  justify-content: space-between;
+}
+.filterMenu img{
+  display: none;
+  filter: invert(1);
+  width: 35px;
+  height: 35px;
+}
+
+@media only screen and (max-width:1275px){
+  .filter-search-lawyer-container {
+    display: block;
+    margin-top: 40px;
+  }
+  .filter-search-container{
+    margin-bottom: 50px;
+  }
+  .filterMenu img{
+    display: block;
+  }
+
+  .filter-lawyer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

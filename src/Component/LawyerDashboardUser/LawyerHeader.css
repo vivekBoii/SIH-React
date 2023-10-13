@@ -1,0 +1,164 @@
+/* content */
+.lp-content-container {
+  width: 98vw;
+  display: grid;
+  height: auto;
+  grid-template-columns: 0.6fr 2fr 1fr;
+  column-gap: 20px;
+}
+.lp-heading {
+  grid-column: 1/-1;
+  font-size: 30px;
+  margin: 20px 0 10px 20px;
+}
+
+.lp-left {
+  display: flex;
+  margin-top: 30px;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.lp-left img {
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+}
+.lp-center {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.lp-center .lp-fields {
+  display: grid;
+  width: 100%;
+  margin: 5px 0;
+  grid-template-columns: 1fr 1fr;
+}
+.lp-desc {
+  grid-column: 2/-1;
+}
+.lp-desc p {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-right: 40px;
+}
+.lp-right {
+  margin-top: 30px;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+.lp-right div {
+  background: #b39562;
+  width: 90%;
+  font-size: 19px;
+  padding: 10px 10px;
+  text-align: center;
+}
+.lp-right .lp-right-head {
+  background: #6f614a;
+  color: #fff;
+  padding: 15px 10px;
+  font-size: 20px;
+}
+
+/* buttons */
+.lp-buttons {
+  padding: 0px 20px;
+}
+.lp-buttons .lp-verify {
+  border: solid;
+  width: 100%;
+  padding: 6px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.lp-buttons .lp-verify p {
+  font-size: 1.35rem;
+  padding-right: 5px;
+}
+.lp-buttons .lp-verify img {
+  width: 25px;
+  height: auto;
+}
+.lp-buttons .lp-enrollment_number {
+  border: solid;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 1.35rem;
+  text-align: center;
+}
+.hd-content-box {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .hd-content-box {
+    display: block;
+  }
+  .hd-content-box div {
+    width: 100%;
+  }
+  .lp-content-box {
+    display: none;
+  }
+  .lp-content-container {
+    width: 98vw;
+    grid-template-columns: 0.6fr 2fr;
+    column-gap: 10px;
+  }
+  .lp-desc p {
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .lp-content-container {
+    width: 96vw;
+    display: block;
+    column-gap: 10px;
+  }
+  .lp-heading{
+    text-align: center;
+  }
+  .lp-left{
+    padding: 0;
+  }
+  .lp-left img{
+    width: 180px;
+    height: 240px;
+  }
+  .lp-buttons .lp-verify p {
+    font-size: 1.25rem;
+  }
+  .lp-buttons .lp-enrollment_number {
+    font-size: 1.25rem;
+  }
+  .lp-right div {
+    font-size: 18px;
+  }
+  .lp-right .lp-right-head {
+    font-size: 18px;
+  }
+  .lp-fields h3{
+    padding-left: 10px;
+  }
+  .lp-fields h4{
+    padding-right: 10px;
+  }
+  .lp-desc h3 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .lp-desc p {
+    padding: 10px;
+  }
+}

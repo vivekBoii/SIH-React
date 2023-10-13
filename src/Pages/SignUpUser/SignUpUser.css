@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Questrial", sans-serif;
+}
+
+.User-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #E6E6E6 0%, #A18974 100%);
+}
+.User-authenticator{
+    text-align: center;
+}
+
+.User-logo{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #6f614a;
+}
+
+.User-authenticator h2{
+    font-size: 30px;
+    color: #6f614a;
+}
+
+.User-authenticator p{
+    margin: 10px 0 20px 0;
+}
+.User-login-container{
+    width: 480px;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+}
+.User-login-container .User-header{
+    width: 480px;
+    display: flex;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.User-login-container .User-header button{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    border: none;
+    background-color: #AA9482;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.User-login-container .User-header button:hover{
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+}
+
+.User-login-container .User-form-page{
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    padding: 25px 30px 25px 30px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.user-form{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    padding-left: 50px;
+    margin-bottom: 25px;
+}
+.user-form::placeholder{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+i{
+    position: relative;
+    top: -36px;
+    left: -180px;
+}
+
+.User-forgot-remember{
+    display: flex;
+    justify-content: space-between;
+}
+
+.User-forgot-remember .User-check{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.User-forgot-remember .User-check label{
+    white-space: nowrap;
+    margin-left:5px;
+}
+
+.User-forgot-remember a{
+    font-size: 14px;
+}
+
+.User-forgot-remember a:hover{
+    text-decoration: underline;
+}
+
+.User-btn {
+    font-size: 18px;
+    padding: .9rem;
+    display: block;
+    text-decoration: none;
+    background-color: #AA9482;
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.User-3s;
+    margin-top: 1rem;
+    border: none;
+    position: relative;
+    width: 100%;
+}
+
+.User-btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #AA9482;
+}
+
+@media screen and (max-width:650px){
+    .User-login-container{
+        width: 400px;
+        border-radius: 20px;
+        box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+    }
+    .User-login-container .User-header{
+        width: 400px;
+    }
+}

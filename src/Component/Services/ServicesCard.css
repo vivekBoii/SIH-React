@@ -1,0 +1,41 @@
+.serv-image-list {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.serv-image-list .serv-image-item {
+  width: 225px;
+  background-color: #f4d596;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 220px;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  cursor: pointer;
+}
+
+.serv-image-list .serv-image-item img {
+  width: 150px;
+  padding: 10px;
+}
+
+.serv-image-list .serv-image-item p {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  padding: 5px;
+}
+
+.serv-image-list .serv-image-item .serv-text {
+  width: 100%;
+}

@@ -1,0 +1,70 @@
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+.serv-supreme-contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 25vh;
+  margin: 20px;
+}
+
+.serv-container {
+  max-width: 1200px;
+  width: 95%;
+}
+
+.serv-slider-wrapper {
+  position: relative;
+}
+
+.serv-slider-wrapper .serv-slide-button {
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  z-index: 5;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  font-size: 2serv-2rem;
+  background: #000;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.serv-slider-wrapper .serv-slide-button:hover {
+  background: #404040;
+}
+
+.serv-slider-wrapper #prev-slide {
+  left: -25px;
+}
+
+.serv-slider-wrapper #next-slide {
+  right: -25px;
+}
+
+.serv-slider-wrapper .serv-image-list {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  gap: 18px;
+  font-size: 0;
+  list-style: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.serv-slider-wrapper .serv-image-list::-webkit-scrollbar,
+.serv-slider-wrapper .serv-short-list::-webkit-scrollbar,
+.serv-slider-wrapper .serv-video-list::-webkit-scrollbar {
+  display: none;
+}
